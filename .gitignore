@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+pl_match_predictor_env/
+.venv/
+venv/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Models & artifacts
+models/
+*.pkl
+
+# Data files
+*.csv
+
+# OS / IDE
+.vscode/
+.idea/
+.DS_Store
