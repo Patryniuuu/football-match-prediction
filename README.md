@@ -40,24 +40,25 @@ The main goal of the project is to demonstrate:
 - SQLite
 - requests, BeautifulSoup
 - joblib
-
+- Streamlit 
 ---
 
 ## Project Structure
 
+```text
 PL_match_predictor/
-├── main.py # Main pipeline entry point
-├── config.py # Global configuration
+├── app.py              # Interfejs użytkownika (Streamlit)
+├── main.py             # Main pipeline entry point
+├── config.py           # Global configuration
 ├── requirements.txt
 ├── README.md
-├── scraping/ # Web scraping logic
-├── features/ # Feature engineering
-├── model/ # Preprocessing, training, evaluaction, prediction
-├── db/ # Database logic (SQLite)
-├── data/ # Local database (ignored in git)
-├── models/ # Trained models (ignored in git)
-
-
+├── scraping/           # Web scraping logic
+├── features/           # Feature engineering
+├── model/              # Preprocessing, training, evaluation, prediction (z inference.py)
+├── db/                 # Database logic (SQLite)
+├── data/               # Local database i df_processed.csv (ignored in git)
+└── models/             # Trained models (ignored in git)
+```
 ---
 ## How to Run
 
@@ -99,7 +100,13 @@ pip install -r requirements.txt
 python main.py
 
 ```
+### 5. Run the Web Interface (Streamlit App)
+To launch the interactive batch prediction web app:
 
+```bash
+streamlit run app.py
+
+```
 ---
 ## Model Performance
 
@@ -140,7 +147,7 @@ The model was tuned using `XGBClassifier` with the following key parameters:
 * [x] Reproducible pipeline
 * [ ] Automated prediction of upcoming fixtures
 * [ ] Model monitoring and retraining
-* [ ] Basic Frontend for interaction
+* [x] Basic Frontend for interaction
 * [ ] Adding more leagues
 ---
 
