@@ -1,27 +1,45 @@
+# =========================
 # Python
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-*.pyd
 
-# Virtual environment
-pl_match_predictor_env/
-.venv/
+# =========================
+# Virtual environments
+# =========================
 venv/
+.env/
+pl_match_predictor_env/
 
-# Databases
+# =========================
+# Data / databases
+# =========================
+data/
 *.db
 *.sqlite
 *.sqlite3
 
-# Models & artifacts
+# =========================
+# Models / artifacts
+# =========================
 models/
 *.pkl
+*.joblib
 
-# Data files
-*.csv
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
 
-# OS / IDE
+# =========================
+# IDEs
+# =========================
 .vscode/
 .idea/
+
+# =========================
+# OS
+# =========================
 .DS_Store
+Thumbs.db
